@@ -1,34 +1,118 @@
 
-A:link {color: gray}
-A:visited, A:active {color: green}
-A:hover {text-decoration: overline; color: teal}
+A:link {color: rgb(141, 194, 112)}
+A:visited, A:active {color: white}
+A:hover {color: rgb(4, 54, 44)}
 	
 Body {
 	background-color: white;
-	font-family: cambria;
-	color: gray	
+	font-family:Arial, Helvetica, sans-serif
+	
 	}
 
-H1 {font-size: 50pt; text-align: right}
-H2 {font-size: 25pt; text-align: right}
-H3 {font-size: 10pt; text-align: center}
-H4 {text-align: center}
-H5 {font-size: 15pt}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: darkgreen;
+	width: auto;
+	position: relative; 
+	}
+	
+li {
+	float: left;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	font-family:Arial, Helvetica, sans-serif
+}
+	
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
 
-P {font-size: 10pt; font-family: monospace}
+
+	
+	H2 {font-size: 25pt; text-align: center}
+	H3 {font-size: 10pt; text-align: center}
+	H4 {text-align: center}
+	H5 {font-size: 15pt; text-align: center;}
+
+	P {font-size: 10pt; font-family: monospace}
+
+
 
 Table {
 	width: 400px; 
-	font-family: monospace; 
+	font-family: Arial, Helvetica, sans-serif; 
 	color: white; 
 	background-color: green;
 	margin: .8em;
-	border-color: darkgreen}
+	border-color: darkgreen;
+	
+}
+
 
 
 Form {
-	font-family: monospace; 
+	font-family: Arial, Helvetica, sans-serif; 
 	text-align: center; 
 	color: white; 
-	background-color: green}
+	background-color: rgb(141, 194, 112)}
+
+footer {
+	text-align: center;
+	padding: 2em;
+	background-color: green;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+/* for mobile use */
+@media screen and (max-width: 600px){
+
+	ul{
+		width: 500px;
+		
+	}
+	li {
+		float: none;
+		width:100%;
+		justify-content: center;
+		text-align: center;	
+	} 
+	Table{
+		text-align: center;
+		width: 500px;	
+	}
+	Form{
+		width: 500px;
+		text-align: center;
+	}
+	footer {
+		display: block;
+		float: none;
+		width: 500px;
+	}
+	body{
+		justify-content: center;
+		
+	}
+
+
+
+	
+}
+
+
+
+
+	
+
+   
+
 
